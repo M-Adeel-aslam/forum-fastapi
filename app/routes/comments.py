@@ -2,9 +2,9 @@ from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy.orm import Session
 from datetime import datetime
 from typing import List
-from app import models, schema
-from app.auth import verify_user
-from app.database import get_db
+import models, schema
+from auth import verify_user
+from database import get_db
 
 route = APIRouter(
     prefix="/comments",

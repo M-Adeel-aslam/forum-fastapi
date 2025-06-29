@@ -1,9 +1,9 @@
 from fastapi import APIRouter, Depends,HTTPException
-from app import models, schema
+import models, schema
 from sqlalchemy.orm import Session
 from sqlalchemy.orm import joinedload
-from app.auth import verify_user
-from app.database import get_db
+from auth import verify_user
+from database import get_db
 from datetime import datetime
 from typing import List
 

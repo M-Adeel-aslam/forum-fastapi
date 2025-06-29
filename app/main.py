@@ -1,6 +1,7 @@
-from app.routes import authentication, threads, post, comments
+from routes import authentication, threads, post, comments
 from fastapi import FastAPI
-from app.database import create_all_tables
+from database import create_all_tables
+
 create_all_tables()
 app = FastAPI()
 

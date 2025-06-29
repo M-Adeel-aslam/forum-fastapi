@@ -1,10 +1,10 @@
 from fastapi import APIRouter, Depends,HTTPException
-from app import models, schema
+import models, schema
 from sqlalchemy.orm import Session
-from app.auth import verify_user
+from auth import verify_user
 from typing import List
 from datetime import datetime
-from app.database import get_db
+from database import get_db
 
 route = APIRouter(
     prefix="/threads",
